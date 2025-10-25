@@ -1,0 +1,66 @@
+import mysql.connector
+
+## step 1: connect the db file
+
+conn = mysql.connector.connect(
+    host = 'localhost',
+    user = 'root',
+    password = 'Aakash@0310',
+    database = 'students'
+)
+
+print('Database connected successfully......')
+
+## step 2: create cursor object
+
+cursor = conn.cursor(buffered=True)
+
+# cursor.execute('''CREATE TABLE user_details (
+#     user_name VARCHAR(20),
+#     mail_id VARCHAR(50),
+#     mobile_no BIGINT,
+#     otp INT,
+#     pass VARCHAR(20)
+# )''')
+
+# print("Table created successfully!")
+
+import random
+def register():
+    user_name = input('Enter your name:')
+    mail_id = input('Enter your mail id:')
+    mobile_no = int(input('Enter your mobile number:'))
+    otp = random.randint(1000,9999)
+    u_otp = int(input(f'OTP : {otp}\nEnter OTP:'))
+    u_pass = input('Enter your password:')
+    if u_pass == input('Confirm Password:'):
+        cursor.execute('''INSERT INTO user_details (user_name, mail_id, mobile_no, otp, user_password)
+                  VALUES (%s, %s, %s, %s, %s)''',
+               (user_name, mail_id, mobile_no, otp, u_pass))
+    else:
+        print('register failed...')
+register()
+    
+# Step 3: Execute the query
+
+# cursor.execute('SELECT * FROM user_details')
+
+# fetchone() - return only first row record only
+# fetchall() - return all records
+# by using type casting res = list(cursor.execute('''select * from movies'''))
+
+# Step 4: Fetch all records
+
+# res = cursor.fetchall()
+
+# Step 5: Display results
+# if res:
+#     for i in res:
+#         print(i)
+# else:
+#     print('No records found.....')
+
+# Step 6: Close connection
+
+cursor.close() 
+conn.close()
