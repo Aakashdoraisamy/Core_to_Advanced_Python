@@ -3,16 +3,16 @@
 This repository contains topic-wise Python programs and examples for learning and practice.
 
 ### 🧩 Topics Covered
-- Collections
 - Conditions & Loops
+- Functions & Lambda
+- Collections
 - Copy & References
-- Datetime Handling
-- Decorators
 - Exception Handling
 - File Handling
-- Functions & Lambda
-- Generators & Iterators
+- Datetime Handling
 - OOPs (Object-Oriented Programming)
-- PDBC (Python Database Connectivity)
+- Decorators
+- Generators & Iterators
 - Regular Expressions
 - Serialization & Deserialization
+- PDBC (Python Database Connectivity)
