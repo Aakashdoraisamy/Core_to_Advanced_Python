@@ -92,7 +92,7 @@ else:
     print(f"{prime} is not Divisible by 3 and 7")
     
     
-# CONVERTS A LOWERCASE CHARACTER TO UPPERCASE
+# CONVERTS A UPPERCASE CHARACTER TO LOWERCASE
 
 # 1st way
 
