@@ -47,6 +47,15 @@ elif char >= 'a' and char <= 'z':
 else:
     print("Invalid input")
 
+# 3rd way
+
+char = input("Enter a character: ")
+
+if 'A' <= char <= 'Z':
+    print(f"{char} is uppercase")
+else:
+    print(f"{char} is not uppercase")
+
 # CHECKS IF A CHARACTER IS A VOWEL OR A CONSONANT
 
 # 1st way
