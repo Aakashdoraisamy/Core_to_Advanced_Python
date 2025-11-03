@@ -107,7 +107,7 @@ class Instagram:
         print(f'Mobile Number: {self._u_mobile}')
     def check(self):
         self.u_name = 'ABC' # updation is possible inside the class
-        # self._u_mobile = 9876543210 # accessing protected variable inside class possible (but not recommended)
+        # self._u_mobile = 9876543210 # accessing protected variable inside class possible
         self._display() # accessing Protected inside class
         
 user1 = Instagram()
