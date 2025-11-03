@@ -1,5 +1,15 @@
 r"""
 
+## Encapsulation
+    - Binding data members(atributes) and methods together in a single unit with the help of (private, public, protected)
+    - private can access by using getter and setter methods
+    - Public: can be accessed from anywhere
+    - Private: can be accessed only within the class
+    - Protected: can be accessed within the class and its subclasses    
+    - Getter and Setter: methods to access and modify private attributes
+    - Decorators: special methods to modify the behavior of getter and setter methods
+
+
 class user:
     
     def __init__(self):
