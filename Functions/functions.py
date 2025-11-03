@@ -48,22 +48,34 @@ user defined functions:
         - with arguments and without return type
         - without arguments and with return type
         - without arguments and without return type
-        - recurssive functions
+        - recursive functions
         
-        example:
-        def add(a,b):  # with arguments and with return type
+        examples:
+        
+        1) with arguments and with return type
+        
+        def add(a,b): 
             return a,b,a+b # if we give multiple values it will return as tuple
         print(add(2,3))
         
-        def add(a,b):  # with arguments and without return type
+        2) with arguments and without return type
+        
+        def add(a,b):  
             print(a+b)
         add(2,3)
+
+        3) without arguments and with return type
         
-        def greet():  # without arguments and with return type
-            return 'Hello, Good Morning!'
-        print(greet())
+        def get_name():
+            name = "Aakash"
+            return name
+
+        result = get_name()
+        print("Name is:", result)
+
+        4) without arguments and without return type
         
-        def greet():  # without arguments and without return type
+        def greet(): 
             print('Hello, Good Morning!')
         greet()
             
@@ -71,17 +83,18 @@ user defined functions:
 # if user enter 10 
 # print(1,2,3,10)
 
-# with arguments and without return type
+1) with arguments and without return type
 
 def print_numbers(n):
     for i in range(1,n+1):
-        # if i == n or i <= 3:
-        if n%i == 0: # n%i == 0 will print all the factors of n example n = 10 and i = 1,2,5,10 how it is working because 10%1 == 0, 10%2 == 0, 10%5 == 0, 10%10 == 0
+        if n%i == 0: 
             print(i, end=" ")
 print_numbers(int(input('Enter a number:')))
 
+# n%i == 0 will print all the factors of n example n = 10 and i = 1,2,5,10 how it is working because 10%1 == 0, 10%2 == 0, 10%5 == 0, 10%10 == 0
 
-# without arguments and with return type
+2) without arguments and with return type
+
 def print_factors():
     n = int(input('Enter a number:'))
     l = []
@@ -91,7 +104,8 @@ def print_factors():
     return l
 print(print_factors())
 
-#with arguments and with return type
+3) with arguments and with return type
+
 def print_factors(n):
     l = []
     for i in range(1,n+1):
@@ -99,6 +113,16 @@ def print_factors(n):
             l.append(i)
     return l
 print(print_factors(int(input('Enter a number:'))))
+
+4) Without arguments and without return type
+
+def print_factors():
+    n = int(input('Enter a number:'))
+    print("Factors of", n, "are:", end=" ")
+    for i in range(1, n+1):
+        if n % i == 0:
+            print(i, end=" ")
+print_factors()
 
 Types of arguments:
     - positional arguments
