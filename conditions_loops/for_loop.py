@@ -81,3 +81,25 @@ rev = s[::-1]
 for char in rev:
     print(char)
 
+n = int(input("Enter how many numbers: "))
+
+total = 0
+for i in range(n):
+    num = int(input("Enter number: "))
+    total = total + num
+
+print("Final answer:", total)
+
+text = input("Enter something: ")
+
+open_count = 0
+close_count = 0
+
+for ch in text:
+    if ch == '{':
+        open_count += 1
+    elif ch == '}':
+        close_count += 1
+
+print("Number of { :", open_count)
+print("Number of } :", close_count)
