@@ -1,0 +1,25 @@
+List vs array
+
+list:
+    - homogeneous and heterogeneous
+    l = [1,1.1,'Hello'] --> valid
+    more time to execute(slow process)
+
+    l = [1,2,3,4]
+    print(l+2) --> not possible throw error
+
+    for acheiving this we use list comprenshion
+
+    res = [i+2 for i in l]
+    print(res) ---> 3,4,5,6
+
+array:
+    - only homogeneous(same only allowed)
+    arr = [1,1.1,'Hello']
+    print(arr) --> internally it converts into str
+
+    in array we can do directly
+
+    arr = [1,2,3,4]
+    print(arr+2) --> 3,4,5,6
+
