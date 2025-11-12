@@ -69,3 +69,19 @@ while num > 0:
 print(f'Count of even numbers is {even_count} and Sum of even numbers is {even_sum} and Average of even numbers is {even_sum/even_count if even_count > 0 else 0}')
 print(f'Count of odd numbers is {odd_count} and Sum of odd numbers is {odd_sum} and Average of odd numbers is {odd_sum/odd_count if odd_count > 0 else 0}')
     
+# Perfect Numbers 1 to 10000
+
+# Program to find perfect numbers from 1 to 10000
+
+num = 1 
+
+while num <= 10000:
+    sum_of_divisors = 0
+    i = 1
+    while i < num: 
+        if num % i == 0:
+            sum_of_divisors += i
+        i += 1
+    if sum_of_divisors == num:
+        print(f"{num} is a perfect number")
+    num += 1
