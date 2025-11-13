@@ -19,3 +19,7 @@ This repository contains topic-wise Python programs and examples for learning an
 - Programs
 - Modules & Packages
 
+## Python Libraries
+- Numpy
+- Pandas
+
