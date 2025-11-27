@@ -10,3 +10,9 @@ for num in arr:
         second = num
 
 print("Second largest:", second)
+
+
+arr = [10, 20, 4, 45, 99, 99]
+
+unique_sorted = sorted(set(arr), reverse=True)
+print("Second largest:", unique_sorted[1])
