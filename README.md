@@ -20,7 +20,3 @@ This repository contains topic-wise Python programs and examples for learning an
 - Modules & Packages
 - Testing (unittest,pytest,assertion)
 
-## Python Libraries
-- Numpy
-- Pandas
-
