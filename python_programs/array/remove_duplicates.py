@@ -27,3 +27,13 @@ def fun(nums):
     return nums[:i+1] # [1,2,3]
 
 print(fun([1,1,2,2,3]))
+
+
+arr = [1, 2, 2, 3, 1]
+res = []
+
+for x in arr:
+    if x not in res:
+        res.append(x)
+
+print(res)
