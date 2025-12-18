@@ -82,3 +82,10 @@ for ch in s:
 for key in freq:
     print(key, ":", freq[key])
 
+s = "interview"
+
+freq = {}
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+
+print(freq)
