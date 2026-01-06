@@ -1,6 +1,0 @@
-2026-01-06 19:58:25,561 - ERROR - Division by zero
-Traceback (most recent call last):
-  File "C:\Users\VarunAakash\OneDrive\Desktop\Pyspyder_class\Exception_handling\exception_logging.py", line 16, in <module>
-    result = a / b
-             ~~^~~
-ZeroDivisionError: division by zero
